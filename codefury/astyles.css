@@ -1,0 +1,57 @@
+
+main {
+    margin: 40px;
+}
+
+h1 {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    animation: article-load 1000ms ease-in 1400ms;
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+h3 {
+    animation: article-load 1400ms ease-in 2000ms;
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+header {
+    background-color: #f2f2f2;
+    animation: load-bg 7s 1;        
+}
+.page-header {
+    background-color: #f2f2f2;
+}
+footer {
+    background-color: #f2f2f2;
+    animation: load-bg 7s 1;
+}
+.page-footer {
+    background-color: #f2f2f2;
+}
+
+@keyframes load-bg {
+    from {
+        background-color: white;
+
+    }
+    to {
+        background-color: #f2f2f2;
+    }
+ }
+
+@keyframes article-load {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

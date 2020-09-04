@@ -1,0 +1,60 @@
+.anime {
+    animation: article-load 1400ms ease-in 2000ms;
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+    font-weight: bold;
+}
+.address-map {
+    text-align: center;
+}
+iframe {
+    animation: address-load 1800ms ease-in 2500ms;
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+
+@keyframes article-load {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes address-load {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+        outline: none;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+        outline: 3px solid black;
+    }
+}
+
+@media screen and (max-width: 991px){
+    iframe {
+        height: 85%;
+        width: 85%;
+    }
+}
+@media screen and (max-width: 767px){
+    iframe {
+        height: 75%;
+        width: 75%;
+    }
+}
+@media screen and (max-width: 479px){
+    iframe {
+        height: 65%;
+        width: 65%;
+    }
+}
